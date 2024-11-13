@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        /* Reset margin, padding và box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cv-container {
+            display: flex;
+            width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Cột bên trái */
+        .left-column {
+            width: 35%;
+            padding: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .left-column img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .left-column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .left-column p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Cột bên phải */
+        .right-column {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .right-column h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .right-column ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .right-column p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .right-column ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Bảng bên trái -->
+        <div class="left-column">
+            <div class="profile-photo">
+                <img src="RobloxScreenShot20240907_075453047.png" alt="Ảnh đại diện">
+            </div>
+            <h2>Nguyễn Văn A</h2>
+            <p><strong>Ngày sinh:</strong> 01/01/2006</p>
+            <p><strong>Email:</strong> nguyen.vana@example.com</p>
+            <p><strong>Số điện thoại:</strong> 09456789</p>
+            <p><strong>Địa chỉ:</strong> 123 Đường Lý thường kiệt, Quận 12, Thành phố HCM</p>
+        </div>
+
+        <!-- Bảng bên phải -->
+        <div class="right-column">
+            <h3>Sở Thích</h3>
+            <ul>
+                <li>Đọc sách</li>
+                <li>Du lịch</li>
+                <li>Chơi thể thao</li>
+            </ul>
+
+            <h3>Định Hướng Phát Triển</h3>
+            <p>Mong muốn phát triển kỹ năng lập trình web và ứng dụng di động, hướng tới việc trở thành một lập trình viên toàn diện.</p>
+
+            <h3>Kỹ Năng</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Thiết kế UX/UI</li>
+            </ul>
+
+            <h3>Trình Độ Học Vấn</h3>
+            <p><strong>Đại học ABC</strong> - Cử nhân Công nghệ thông tin (2010 - 2014)</p>
+        </div>
+    </div>
+</body>
+</html>

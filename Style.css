@@ -1,0 +1,128 @@
+body
+{
+	margin:0;
+	padding:0;
+	background:#262636;
+}
+.container
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:450px;
+	height:450px;
+	background: rgba(255,255,255,0.1);
+	border-radius:60%;
+	transform-origin:bottom center;
+	animation: animatebowl 6s ease-in-out infinite;	
+}
+.container:before{}
+.container:after
+{
+	content:'';
+	position:absolute;
+	top:30%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:250px;
+	height:130px;
+	border-radius:50%;
+	background: rgba(255,255,255,0.05);
+
+}
+.water
+{
+	position:absolute;
+	top:50%;
+	left:5px;
+	right:5px;
+	bottom:8px;
+	background: rgba(65,193,251,0.5);
+	border-bottom-right-radius:205px;
+	border-bottom-left-radius:205px;
+	transform-origin:top center;
+	animation: animatewater 6s ease-in-out infinite;
+}
+.water:before
+{
+	content:'';
+	position:absolute;
+	top:-10px;
+	left:0;
+	width:100%;
+	height:20px;
+	background:#1fa4e0;
+	border-radius:50%;
+	
+}
+.container .water img.fish
+{
+	width:180px;
+	animation: animatefish 5s ease-in-out infinite;
+}
+@keyframes animatefish
+{
+	0%
+	{
+		transform:translate(0,0) rotateY(180deg);
+	}
+	50%
+	{
+		transform:translate(250px,25px) rotateY(180deg);
+	}
+	51%
+	{
+		transform:translate(250px,55px) rotateY(0deg);
+	}
+	100%
+	{
+		transform:translate(0,0) rotateY(0deg);
+	}
+}
+@keyframes animatebowl
+{
+	0%
+	{
+		transform:translate(-50%,-50%) rotate(0deg);
+	}
+	25%
+	{
+		transform:translate(-50%,-50%) rotate(15deg);
+	}
+	50%
+	{
+		transform:translate(-50%,-50%) rotate(0);
+	}
+	75%
+	{
+		transform:translate(-50%,-50%) rotate(-15deg);
+	}
+	100%
+	{
+		transform:translate(-50%,-50%) rotate(0);
+	}
+}
+@keyframes animatewater
+{
+	0%
+	{
+		transform:rotate(0deg);
+	}
+	25%
+	{
+		transform:rotate(-35deg);
+	}
+	50%
+	{
+		transform: rotate(0);
+	}
+	75%
+	{
+		transform: rotate(35deg);
+	}
+	100%
+	{
+		transform: rotate(0);
+	}
+}
